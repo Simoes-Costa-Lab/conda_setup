@@ -10,3 +10,10 @@ chmod +x ./install.sh
 ./install.sh
 ```
 Reload your shell
+
+## Update guide
+First, remove the current environment. Then update
+```bash
+cd conda_setup
+conda env create -f $HOME/conda_setup/py37environment.yml
+```
