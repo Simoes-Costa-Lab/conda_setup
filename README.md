@@ -14,6 +14,7 @@ Reload your shell
 ## Update guide
 First, remove the current environment. Then update
 ```bash
+conda deactivate
 conda env remove -n {py27|py37}
 cd conda_setup
 conda env create -f $HOME/conda_setup/py37environment.yml
