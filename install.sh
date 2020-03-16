@@ -11,6 +11,6 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 #Create new environments from the yml files
 conda env create -f $HOME/conda_setup/py27environment.yml
-#py37 is created last to become the default
 conda env create -f $HOME/conda_setup/py37environment.yml
-conda activate py37
+#Set py37 to be activated by default
+echo 'conda activate py37' >> ~/.bashrc
