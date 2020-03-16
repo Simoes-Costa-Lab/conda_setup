@@ -9,3 +9,4 @@ cd conda_setup
 chmod +x ./install.sh
 ./install.sh
 ```
+Reload your shell
