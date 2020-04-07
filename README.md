@@ -25,3 +25,4 @@ Write out the environment to a file
 conda env export -n py37 > py37environment.yml
 conda env export -n py27 > py27environment.yml
 ```
+Then upload this to github
