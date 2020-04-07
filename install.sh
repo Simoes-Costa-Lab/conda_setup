@@ -13,5 +13,7 @@ conda config --add channels conda-forge
 #Create new environments from the yml files
 conda env create -f $HOME/conda_setup/py27environment.yml
 conda env create -f $HOME/conda_setup/py37environment.yml
+#Add other path variables.
+echo "export LD_LIBRARY_PATH='\$LD_LIBRARY_PATH:$HOME/miniconda3/bin:\$PATH'" >> ~/.bashrc
 #Set py37 to be activated by default
 echo 'conda activate py37' >> ~/.bashrc
