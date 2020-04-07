@@ -14,8 +14,14 @@ Reload your shell
 ## Update guide
 First, remove the current environment. Then update
 ```bash
-conda deactivate
-conda env remove -n {py27|py37}
 cd conda_setup
-conda env create -f $HOME/conda_setup/py37environment.yml
+conda env update -n py37 --file py37environment.yml --prune
+conda env update -n py27 --file py27environment.yml --prune
+```
+
+## Exporting an update guide
+Write out the environment to a file
+```bash
+conda env export -n py37 > py37environment.yml
+conda env export -n py27 > py27environment.yml
 ```
