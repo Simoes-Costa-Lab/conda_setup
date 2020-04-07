@@ -12,8 +12,9 @@ chmod +x ./install.sh
 Reload your shell
 
 ## Update guide
-First, remove the current environment. Then update
+Update the repository, then update the environment.
 ```bash
+git clone https://github.com/Simoes-Costa-Lab/conda_setup/
 cd conda_setup
 conda env update -n py37 --file py37environment.yml --prune
 conda env update -n py27 --file py27environment.yml --prune
