@@ -194,5 +194,5 @@ dependencies:
   - pip:
     - pyqt5-sip==4.19.18
     - pyqtwebengine==5.12.1
-prefix: /home/ash274/miniconda3/envs/py37
+prefix: $HOME/miniconda3/envs/py37
 
