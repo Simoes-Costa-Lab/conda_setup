@@ -14,11 +14,10 @@ Reload your shell
 ## Update guide
 Update the repository, then update the environment.
 ```bash
-rm -rf conda_setup
-git clone https://github.com/Simoes-Costa-Lab/conda_setup/
 cd conda_setup
-conda env update -n py37 --file py37environment.yml --prune
-conda env update -n py27 --file py27environment.yml --prune
+git pull
+conda env update -n py37 --file py37environment.yml #can --prune if you want.
+conda env update -n py27 --file py27environment.yml
 ```
 
 ## Exporting an update guide
