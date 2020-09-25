@@ -339,5 +339,5 @@ dependencies:
     - setuptools==44.1.1
     - subprocess32==3.5.4
     - zipp==1.2.0
-prefix: /home/ash274/miniconda3/envs/py27
+prefix: $HOME/miniconda3/envs/py27
 
