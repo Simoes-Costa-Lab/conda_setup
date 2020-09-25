@@ -21,6 +21,15 @@ conda env update -n py27 --file py27environment.yml
 ```
 
 ## Exporting an update guide
+Update packages for each environment
+```bash
+conda update --all
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U 
+conda activate py27
+conda update --all
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U 
+```
+
 Write out the environment to a file
 ```bash
 conda env export -n py37 > py37environment.yml
