@@ -367,5 +367,5 @@ dependencies:
     - xlrd==1.2.0
     - xlsxwriter==1.3.6
     - zarr==2.4.0
-prefix: /home/ash274/miniconda3/envs/py37
+prefix: $HOME/miniconda3/envs/py37
 
